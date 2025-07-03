@@ -1,0 +1,35 @@
+@use '../helpers' as *;
+
+.team {
+    --presonImageSize: #{rem(60)};
+
+    display: flex;
+    padding: rem(10);
+    background-color: var(--color-dark-10);
+    border-radius: rem(100);
+
+    @include laptop {
+        --presonImageSize: #{rem(50)};
+
+        padding: rem(8);
+    }
+
+    @include tablet {
+        --presonImageSize: #{rem(40)};
+    }
+
+    &__person {
+        width: var(--presonImageSize);
+        background-color: var(--color-dark-15);
+        border: rem(2) solid var(--color-dark-40);
+        border-radius: 50%;
+
+        @include laptop {
+            border-width: rem(1);
+        }
+
+        &:not(:first-child) {
+            margin-left: calc(var(--presonImageSize) / 4 * -1);
+        }
+    }
+}
