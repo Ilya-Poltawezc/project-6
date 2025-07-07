@@ -1,4 +1,4 @@
-import pxToRem from "./utils.js/pxToRem.js"
+import pxToRem from './utils/pxToRem.js'
 
 const rootSelector = '[data-js-expandable-content]'
 

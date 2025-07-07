@@ -4,6 +4,7 @@
     display: inline-flex;
     justify-content: center;
     padding: rem(18) rem(24);
+    min-width: rem(137);
     font-size: rem(18);
     color: var(--color-grey-60);
     white-space: nowrap;
@@ -15,6 +16,7 @@
         padding: rem(14) rem(20);
         font-size: rem(14);
         border-radius: rem(8);
+        min-width: rem(103);
     }
 
     @include hover {
